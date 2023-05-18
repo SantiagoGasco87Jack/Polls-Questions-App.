@@ -124,7 +124,7 @@ export const postRouter = t.router({
       const { postId, pollOptionId } = input;
       const userId = assertUserId(ctx);
 
-      // TODO(acorn1010): Implement confidence interval to figure out when poll should end (when
+      // TODO(SantiagoGasco87Jack): Implement confidence interval to figure out when poll should end (when
       //  consensus is reached).
       //  @link https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval#Wilson_score_interval
 

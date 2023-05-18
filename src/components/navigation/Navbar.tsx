@@ -50,7 +50,7 @@ function MobileMenuButton(props: { open?: boolean }) {
   );
 }
 
-const DEFAULT_CATEGORIES = [{ id: 'acorn1010' }, { id: 'foony' }];
+const DEFAULT_CATEGORIES = [{ id: 'SantiagoGasco87Jack' }, { id: 'foony' }];
 
 /** Given a `topicId` such as 'my-topic_ID'. */
 function toPrettyName(topicId: string) {
@@ -89,7 +89,7 @@ type NavItemProps = { name: string; href: string };
 function NavItem(props: NavItemProps) {
   const { asPath } = useRouter();
   const { href, name } = props;
-  // Extra '/' is needed so that / doesn't match /acorn1010.
+  // Extra '/' is needed so that / doesn't match /SantiagoGasco87Jack.
   const isActive = (asPath + '/').startsWith(href + '/');
   return (
     <Link href={href} passHref>

@@ -78,12 +78,12 @@ model TopicToUser {
   user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
   topicId String
   userId  String
-  // TODO(acorn1010): Add permissions. By default, they have all permissions.
+  // TODO(SantiagoGasco87Jack): Add permissions. By default, they have all permissions.
 
   @@id([topicId, userId])
 }
 
-// A topic, such as "acorn1010" or "foony". A "topic" has multiple "posts" in it.
+// A topic, such as "SantiagoGasco87Jack" or "foony". A "topic" has multiple "posts" in it.
 model Topic {
   id        String   @id
   createdAt DateTime @default(now())
@@ -124,7 +124,7 @@ model PollOption {
   userVotes PollOptionVote[]
 }
 
-// TODO(acorn1010): Add option to fork a poll.
+// TODO(SantiagoGasco87Jack): Add option to fork a poll.
 model Post {
   id          String   @id @default(cuid())
   title       String
@@ -193,7 +193,7 @@ model PollOptionVote {
   userId String
   postId String
 
-  // TODO(acorn1010): Make this non-optional.
+  // TODO(SantiagoGasco87Jack): Make this non-optional.
   pollOption   PollOption? @relation(fields: [pollOptionId], references: [id], onDelete: Cascade)
   pollOptionId String?
 

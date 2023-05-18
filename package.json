@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
-    "proxy": "pscale org switch acorn1010 && pscale connect vote main --port 3309"
+    "proxy": "pscale org switch SantiagoGasco87Jack && pscale connect vote main --port 3309"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",

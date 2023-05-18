@@ -72,7 +72,7 @@ function ResizeArea() {
   return (
     <>
       <Button
-        onClick={() => console.log('FIXME(acorn1010): Implement copying.')}
+        onClick={() => console.log('FIXME(SantiagoGasco87Jack): Implement copying.')}
         className="flex self-end whitespace-nowrap"
       >
         Copy <DocumentDuplicateIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
@@ -119,7 +119,7 @@ async function cropImage(blob: Blob) {
     try {
       const image = new Image();
       image.onload = () => {
-        // TODO(acorn1010): Do the image cropping here.
+        // TODO(SantiagoGasco87Jack): Do the image cropping here.
         resolve(image);
       };
       image.src = await readImageBlob(blob);
